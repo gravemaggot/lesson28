@@ -1,8 +1,12 @@
 <h4>Post details:</h4>
 <p>
+    <div>
+        <label>Author: </label>
+        <span style="color: #559ef8"><%= @row['author']%></span>
+    </div>    
     <%= @row['content'] %>
     <br />
-    Added at <%= @row['created_date'] %>
+    <span style="font-size: 75%; color: #999">Added at <%= @row['created_date'] %></span>
 </p>
 <br />
 <h4>Comments:</h4>
@@ -10,7 +14,7 @@
     <p>
         <%= comment['content']%>
         <br />
-        Added at <%= comment['created_date'] %>
+        <span style="font-size: 75%; color: #999">Added at <%= comment['created_date'] %></span>
     </p>
     <hr />
 <% end %>

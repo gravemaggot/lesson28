@@ -1,6 +1,11 @@
 <h2>Add New Post</h2>
 <p>
     <form action="/new" method="POST" role="form">
+        <div class="form-group">
+            <label>Author</label>
+            <input name="author" type="text" class="form-control">
+        </div>
+        <br />
         <textarea name="content" class="form-control" rows="6" placeholder="The post text here"></textarea>
         <br />
         <button type="submit" class="btn btn-primary">Submit</button>
